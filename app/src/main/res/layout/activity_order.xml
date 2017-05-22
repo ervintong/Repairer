@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neal.repairer.activity.OrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_heightPercent="8.3%">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:id="@+id/ll_back_order"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:clickable="false"
+                android:layout_width="9dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/title"
+            android:text="半月保养项目内容及要求" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:visibility="gone"
+        android:id="@+id/prl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/prl_title"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                app:layout_heightPercent="8.3%">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_logo_top_title"
+                            android:layout_width="30dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/logo_top"
+                            app:layout_marginTopPercent="12%" />
+
+                        <ImageView
+                            android:id="@+id/iv_logo_bottom_title"
+
+                            android:layout_width="30dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/iv_logo_top_title"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/logo_bottom" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/iv_logo_top_title"
+                            android:text="@string/app_name"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/font_size_main" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fm_container"
+                android:layout_width="match_parent"
+                android:layout_below="@id/prl_title"
+                app:layout_heightPercent="83.4%" />
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/fm_container"
+                app:layout_heightPercent="8.3%">
+
+                <LinearLayout
+                    android:id="@+id/ll_home"
+                    style="@style/radio">
+
+                    <Button
+                        android:id="@+id/bt_home"
+                        android:layout_width="25dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/rb_home_normal"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:clickable="false"
+                        android:text="首 页"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/font_size_main" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_order"
+                    style="@style/radio"
+                    android:layout_toRightOf="@id/ll_home">
+
+                    <Button
+                        android:id="@+id/bt_order"
+                        android:layout_width="25dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/rb_order_normal"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:clickable="false"
+                        android:text="工 单"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/font_size_main" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_talkback"
+
+                    style="@style/radio"
+                    android:layout_toRightOf="@id/ll_order">
+
+                    <Button
+                        android:id="@+id/bt_talkback"
+                        android:layout_width="25dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/rb_talkback_normal"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_talkback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:clickable="false"
+                        android:text="对 讲"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/font_size_main" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_my"
+                    style="@style/radio"
+                    android:layout_toRightOf="@id/ll_talkback">
+
+                    <Button
+                        android:id="@+id/bt_my"
+                        android:layout_width="25dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/rb_my_normal"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_my"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:clickable="false"
+                        android:text="我 的"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/font_size_main" />
+                </LinearLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="141dp"
+            android:layout_height="141dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo"
+            app:layout_marginTopPercent="12%" />
+
+        <Button
+            android:id="@+id/bt_login"
+            style="@style/mainButton"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:text="登    陆"
+            app:layout_marginBottomPercent="26.9%" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/mainEdit"
+            android:layout_above="@id/bt_login"
+            android:hint="请输入密码"
+            app:layout_marginBottomPercent="3.4%" />
+
+        <EditText
+            android:id="@+id/et_user"
+            style="@style/mainEdit"
+            android:layout_above="@id/et_password"
+            android:hint="请输入用户名"
+            app:layout_marginBottomPercent="2.5%" />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_anim_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@color/colorPrimary"
+            app:layout_heightPercent="50%" />
+
+        <ImageView
+            android:id="@+id/iv_anim_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_anim_top"
+            android:alpha="0"
+            android:background="@color/colorPrimary"
+            app:layout_heightPercent="50%" />
+
+        <ImageView
+            android:id="@+id/iv_logo_top"
+            android:layout_width="141dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0"
+            android:background="@drawable/logo_top"
+            app:layout_marginTopPercent="12%" />
+
+        <ImageView
+            android:id="@+id/iv_logo_bottom"
+            android:layout_width="141dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/iv_logo_top"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0"
+            android:background="@drawable/logo_bottom" />
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
+

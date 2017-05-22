@@ -1,0 +1,49 @@
+<resources>
+
+    <style name="AppTheme" parent="Base.AlertDialog.AppCompat">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorPrimaryDark">#512DA8</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+
+    <style xmlns:app="http://schemas.android.com/apk/res-auto" name="mainButton">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_size_main</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/button_main</item>
+    </style>
+
+    <style xmlns:app="http://schemas.android.com/apk/res-auto" name="mainEdit">
+        <item name="android:textCursorDrawable">@drawable/color_cousor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/font_size_main</item>
+        <item name="android:background">@drawable/edit_main</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+
+    </style>
+
+    <style xmlns:app="http://schemas.android.com/apk/res-auto" name="radio">
+        <item name="android:padding">7dp</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layout_widthPercent">25%</item>
+    </style>
+
+    <style xmlns:app="http://schemas.android.com/apk/res-auto" name="title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_main</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+</resources>
